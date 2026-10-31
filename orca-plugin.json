@@ -1,0 +1,45 @@
+{
+  "manifestVersion": 2,
+  "id": "gruvbox-material-theme",
+  "publisher": "piter75",
+  "name": "Gruvbox Material for Orca",
+  "version": "1.0.0",
+  "execution": "data",
+  "description": "Warm Gruvbox Material dark and light themes in Medium contrast, with uniform panel backgrounds, subtle dividers, and matching syntax and terminal colors.",
+  "license": "MIT",
+  "repository": "https://github.com/piter75/orca-gruvbox-material-theme",
+  "engines": {
+    "orca": ">=1.4.245"
+  },
+  "contributes": {
+    "themes": [
+      {
+        "id": "gruvbox-material-dark-medium",
+        "title": "Gruvbox Material Dark Medium",
+        "path": "themes/gruvbox-material-dark-medium.json"
+      },
+      {
+        "id": "gruvbox-material-light-medium",
+        "title": "Gruvbox Material Light Medium",
+        "path": "themes/gruvbox-material-light-medium.json"
+      }
+    ],
+    "terminalThemes": [
+      {
+        "id": "gruvbox-material-dark-medium",
+        "title": "Gruvbox Material Dark Medium",
+        "path": "terminal/gruvbox-material-dark-medium.json"
+      },
+      {
+        "id": "gruvbox-material-light-medium",
+        "title": "Gruvbox Material Light Medium",
+        "path": "terminal/gruvbox-material-light-medium.json"
+      }
+    ]
+  },
+  "capabilities": [],
+  "cover": {
+    "path": "images/cover.png",
+    "alt": "Gruvbox Material Dark Medium and Light Medium themes with uniform panel backgrounds, syntax highlighting, and matching terminal colors"
+  }
+}
