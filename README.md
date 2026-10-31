@@ -79,9 +79,15 @@ primary red is `#b94747` instead of `#c14a4a`, and muted text is `#726559` inste
 of `#7c6f64`. Syntax colors retain the upstream palette and meet Orca's 3:1
 syntax contrast floor on the editor background.
 
-The syntax mapping uses red keywords, orange operators and tags, green strings
-and functions, yellow types and escapes, purple numbers and decorators, aqua
-constants, blue variables and links, and italic `grey1` comments.
+The syntax mapping uses red keywords, orange storage modifiers, operators and
+tags, green strings and functions, yellow types and escapes, purple booleans,
+numbers and decorators, aqua constants, blue variables and links, and italic
+`grey1` comments.
+
+Boolean rules target `constant.language.boolean`, `constant.language.true`, and
+`constant.language.false`; storage modifiers use `storage.modifier`. Their
+appearance depends on the scopes exposed by each language tokenizer. A tokenizer
+that combines them with general keywords cannot distinguish these colors.
 
 Terminal ANSI slots follow upstream's terminal mapping, including identical
 normal and bright colors. Black uses Dark `bg5` / Light `fg0`, white uses Dark

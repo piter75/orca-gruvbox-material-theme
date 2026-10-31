@@ -71,15 +71,34 @@
       }
     },
     {
+      "name": "Booleans",
+      "scope": [
+        "constant.language.boolean",
+        "constant.language.true",
+        "constant.language.false"
+      ],
+      "settings": {
+        "foreground": "#d3869b"
+      }
+    },
+    {
       "name": "Keywords",
       "scope": [
         "keyword",
         "storage.type",
-        "storage.modifier",
         "variable.language"
       ],
       "settings": {
         "foreground": "#ea6962"
+      }
+    },
+    {
+      "name": "Storage modifiers",
+      "scope": [
+        "storage.modifier"
+      ],
+      "settings": {
+        "foreground": "#e78a4e"
       }
     },
     {
