@@ -23,16 +23,47 @@ through Orca's plugin settings:
 https://github.com/piter75/orca-gruvbox-material-theme
 ```
 
+## Testing the 1.4.246 UI colors
+
+The `material-ui-tokens` branch is an untagged development preview. It adds:
+
+- Uniform tab backgrounds, normal/muted tab text, and an accent-colored active-tab indicator.
+- Warm split dividers with an accent-colored hover state.
+- Material blue links, green/red diffs, and Material Git file-status colors.
+- Five chart colors: yellow, green, blue, purple, and orange.
+
+Use Orca **1.4.246 or newer** to test these colors. Orca 1.4.245 ignores the new
+UI tokens and retains its existing appearance; chart colors also apply there.
+The manifest keeps the existing minimum version for compatibility.
+
+With this branch checked out, add the repository folder under **Settings →
+Plugins → Development folders…**, or run:
+
+```sh
+orca plugin dev load /path/to/orca-gruvbox-material-theme
+```
+
+The development folder overrides the installed plugin with the same identity.
+Remove it from Development folders, or run `orca plugin dev unload` with the
+same path, to return to the installed catalog release. This preview has no
+version tag and does not update the community catalog.
+
+Diff line backgrounds use upstream Material diff surfaces in Dark. Light uses
+slightly lighter versions to preserve Orca's required chat-diff contrast.
+Character and gutter tints are derived by Orca from the green/red hues.
+Workspace selection, host badges, chat surfaces, syntax highlighting, and
+terminal palettes retain their existing behavior.
+
 ## Development and releases
 
 This repository contains one content-only plugin, with its manifest at the root.
 No build or dependency installation is needed. Normal Git branches and Orca
 worktrees can be used to develop both appearances together.
 
-Validate with an Orca source checkout:
+Validate with Orca 1.4.246 or newer:
 
 ```sh
-node /path/to/orca/config/scripts/validate-plugin-files.mjs .
+orca plugin validate .
 ```
 
 Before publishing a release, update `version` in `orca-plugin.json`, commit the

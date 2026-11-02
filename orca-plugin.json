@@ -3,7 +3,7 @@
   "id": "gruvbox-material-theme",
   "publisher": "piter75",
   "name": "Gruvbox Material for Orca",
-  "version": "1.0.1",
+  "version": "1.1.0-dev.1",
   "execution": "data",
   "description": "Warm Gruvbox Material dark and light themes in Medium contrast, with uniform panel backgrounds, subtle dividers, and matching syntax and terminal colors.",
   "license": "MIT",
